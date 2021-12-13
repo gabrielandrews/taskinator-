@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var formEl = document.querySelector("#task-form");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 
@@ -42,3 +43,16 @@ var createTaskEl = function (taskDataObj) {
 };
 
 formEl.addEventListener("submit", taskFormHandler);
+=======
+var buttonEl = document.querySelector("#save-task");
+var tasksToDoEl = document.querySelector("#tasks-to-do");
+
+var createTaskHandler = function () {
+    var listItemEl = document.createElement("li");
+    listItemEl.className = "task-item";
+    listItemEl.textContent = "This is a new task.";
+    tasksToDoEl.appendChild(listItemEl);
+};
+
+buttonEl.addEventListener("click", createTaskHandler);
+>>>>>>> 08cf6ae13925800d2766a05aa8e9255d5cf8f6e1
